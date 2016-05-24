@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="contact_project" type="text/css" href="css/contact_project.css">
+    <script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(-6.586585, 106.805159),
+    zoom:20,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div class="menu">
+    <nav>
+        <a href="index_project.html">Home</a>
+        <a href="course_project.html">Course</a>
+        <a href="contact_project.html">Contact</a>
+    </nav>
+</div>
+<section id="content">
+  <div class="main">
+    <h1>Contact Information</h1>
+    <div class="box-address">
+      <h4><b>LADY Course</b></h4>
+      <dl class="address">
+        <dt>DiLo Bogor,<br>
+          Jl. Padjajaran no.39,Babakan, Bogor.</dt>
+        <dd> <span>Telephone:</span> +62 813 56789</dd>
+        <dd> E-mail: <a class="mail-1" href="#">mail@ladycourse.net</a> </dd>
+      </dl>
+    </div>
+    <div class="maps">
+        <!--
+      <iframe src="https://www.google.co.id/maps/place/Digital+Innovation+Lounge+(DILo)+Bogor/@-6.5865797,106.8029383,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69c432b22afde7:0xb908b0c5eef5b5dc!8m2!3d-6.586585!4d106.805127"> </iframe> -->
+        <div id="googleMap" style="width:300px;height:250px;"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  
+  <div class="box-contact">
+    <h3>Contact Form</h3>
+    <form id="contact-form" action="#">
+        <marquee><strong>We will be in touch soon.</strong></marquee>
+      <fieldset>
+        <div class="coll-1">
+            <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis kursus yang diminati:</td>
+                        <td>
+                            <div id="jenis_pilihan_kursus">
+                                <select name="title" id="title" >
+                                    <option value="Kursus 1" >Kursus 1</option>
+                                    <option value="Kursus 2" >Kursus 2</option>
+                                    <option value="Kursus 3" >Kursus 3</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Message:</td>
+                        <td>
+                            <textarea name='input_3' id='input_1_3' class='textarea medium' tabindex='3' rows='10' cols='50'></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Submit" style="color:red"></td>
+                    </tr>
+            </table>
+        </div>
+      </fieldset>
+    </form>
+</div>
+</section>
+
+</body>
+    
+<footer>
+  <div class="main">
+    <ul class="soc-list">
+      <li><a href="#"><img alt="" src="images/icon-1.png"></a></li>
+      <li><a href="#"><img alt="" src="images/icon-2.png"></a></li>
+      <li><a href="#"><img alt="" src="images/icon-3.png"></a></li>
+      <li><a href="#"><img alt="" src="images/icon-4.png"></a></li>
+    </ul>
+  </div>
+</footer>
+
+</html>

@@ -1,0 +1,15 @@
+.box-address {
+    float: left;
+    width: 260px;
+    margin-right: 30px;
+    padding-top: 9px;
+}
+.maps { 
+    float: right;
+    margin: 10px;
+}
+.main {
+    margin: 0 auto;
+    position: relative;
+    width: 940px
+}
