@@ -293,6 +293,7 @@ footer {
 .soc-list li {
 	padding:115px 10px 0 7px;
 	float:left;
+    list-style: none;
 }
 .soc-list li a {
 	display:block;
