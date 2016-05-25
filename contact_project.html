@@ -2,7 +2,32 @@
 <html>
 
 <head>
-    <link rel="contact_project_lc" type="text/css" href="css/contact_project_lc.css">
+    <!--Dari page Index -->
+    <title>Lady_Course</title>  
+    <meta charset="utf-8">
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">    
+<link href="http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/slider.css" type="text/css" media="screen">
+
+<script src="js/jquery-1.7.1.min.js" ></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script>
+jQuery(window).load(function () {
+    jQuery('.flexslider').flexslider({
+        animation: "fade",
+        slideshow: true,
+        slideshowSpeed: 7000,
+        animationDuration: 600,
+        prevText: "",
+        nextText: "",
+        controlNav: false
+    })
+});
+</script>
+    <!-- sampai sini dari page Index-->
+    <link rel="contact_project" type="text/css" href="css/contact_project.css">
     <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -42,18 +67,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
           </div>
     <!--menu sampai disini-->
 </div>    
-<div class="menu">
-    <nav>
-        <a href="index_project.html">Home</a>
-        <a href="course_project.html">Course</a>
-        <a href="contact_project.html">Contact</a>
-    </nav>
-</div>
+
 <section id="content">
   <div class="main">
-    <h1>Contact Information</h1>
+    <h1 style="color:red">Contact Information</h1>
     <div class="box-address">
-      <h4><b>LADY Course</b></h4>
+      <h2 style="color:purple"><b>LADY Course</b></h2>
       <dl class="address">
         <dt>DiLo Bogor,<br>
           Jl. Padjajaran no.39,Babakan, Bogor.</dt>
@@ -64,13 +83,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
     <div class="maps">
         <!--
       <iframe src="https://www.google.co.id/maps/place/Digital+Innovation+Lounge+(DILo)+Bogor/@-6.5865797,106.8029383,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69c432b22afde7:0xb908b0c5eef5b5dc!8m2!3d-6.586585!4d106.805127"> </iframe> -->
-        <div id="googleMap" style="width:300px;height:250px;"></div>
+        <div id="googleMap" style="width:300px;height:200px;"></div>
     </div>
     <div class="clear"></div>
   </div>
   
   <div class="box-contact">
-    <h3>Contact Form</h3>
+    <h1 style="color: red">Contact Form</h1>
     <form id="contact-form" action="#">
         <marquee><strong>We will be in touch soon.</strong></marquee>
       <fieldset>
@@ -89,9 +108,9 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         <td>
                             <div id="jenis_pilihan_kursus">
                                 <select name="title" id="title" >
-                                    <option value="Kursus 1" >Kursus 1</option>
-                                    <option value="Kursus 2" >Kursus 2</option>
-                                    <option value="Kursus 3" >Kursus 3</option>
+                                    <option value="Kursus 1" >Knitting</option>
+                                    <option value="Kursus 2" >Cooking</option>
+                                    <option value="Kursus 3" >Floral</option>
                                 </select>
                             </div>
                         </td>
@@ -104,7 +123,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     </tr>
                     <tr>
                         <td></td>
-                        <td><input type="submit" value="Submit" style="color:red"></td>
+                        <td><input type="submit" value="SUBMIT" style="color:red"></td>
                     </tr>
             </table>
         </div>

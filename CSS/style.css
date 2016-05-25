@@ -302,3 +302,22 @@ footer {
 }
 .soc-list li a:hover{opacity:0.7}
 
+/*page contact_project*/
+.box-address {
+    text-align:center;
+    width: 940px;
+    margin-right: 30px;
+    padding-top: 50px;
+}
+.maps { 
+    margin-left: 320px;
+    margin-top: 20px;
+}
+.main {
+    margin: 0 auto;
+    position: relative;
+    width: 940px
+}
+.box-contact h1 {
+    width: 600px;
+}
